@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicted Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='Images/favicon.ico') }}">
+</head>
+<body id="bg-img">
+    <div class="container2">
+        <h1 id='result'>Predicted Result</h1>
+        <div class="result">
+            <p>{{ prediction | safe }}</p>
+        </div>
+    </div>
+    <div class="energy-saving-container">
+        <div class="energy-saving-tips">
+            <h2>Energy Saving Tips:</h2>
+            <ul>
+                <li>Use energy-efficient appliances and light bulbs to reduce electricity consumption.</li>
+                <li>Unplug electronic devices when not in use to prevent standby power consumption.</li>
+                <li>Seal gaps and cracks around windows and doors to prevent heat loss or gain.</li>
+                <li>Limit the use of hot water by taking shorter showers and washing clothes in cold water.</li>
+                <li>Plant trees strategically around your home to provide shade in the summer and insulation in the winter.</li>
+                <li>Utilize natural daylight by opening curtains or blinds during the day to reduce the need for artificial lighting.</li>
+                <li>Opt for public transportation, carpooling, or biking whenever possible to reduce fuel consumption and emissions.</li>
+                <li>Set thermostats to appropriate temperatures and use programmable thermostats to save on heating and cooling costs.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
